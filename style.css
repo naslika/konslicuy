@@ -1,6 +1,6 @@
 :root{
-  --primary: #9d4302;
-  --secondary: #d7a35a;
+  --primary: #8b4513;
+  --secondary: #d2691e;
   --border-radius: 5px;
   --font: 'Arial, sans-serif';
 }
@@ -9,15 +9,18 @@ body {
   font-family: var(--font);
   margin: 0;
   padding: 0;
-  background-color: #010101;
-  color: #333;
+  background-color: #1a1612;
+  color: #f5f5dc;
 }
 .hero {
-  background-image: url('perpus.jpeg');
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('perpus.jpeg');
   background-size: cover;
   background-position: center;
   height: 100vh;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 h1 {
   color: var(--primary);
@@ -37,7 +40,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
-button {
+.btn {
   background-color: var(--primary);
   color: white;
   border: none;
@@ -45,39 +48,38 @@ button {
   border-radius: var(--border-radius);
   cursor: pointer;
 }
-button:hover {
+.btn:hover {
   background-color: darken(var(--primary), 10%);
 }
-nav {
-  background-color: var(--secondary);
-  padding: 10px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--primary);
   border-radius: var(--border-radius);
 }
-nav a {
-  color: rgb(0, 0, 0);
-  margin: 2 10px;
-}
-nav a:hover {
-  text-decoration: underline;
-}
-nav .nav-logo {
+.nav-logo {
   font-size: 24px;
   font-weight: bold;
-  color: #ef1a1a;
+  color: #000000;
+  text-decoration: none;
 }
-nav .nav-menu {
+.nav-logo span {
+  color: var(--secondary);
+}
+.nav-menu {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  gap: 20px;
 }
 .navbar-item {
-  color: #fff;
+  color: #2f1b14;
   text-decoration: none;
   padding: 10px;
+  border-radius: var(--border-radius);
 }
 .navbar-item:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: var(--border-radius);
+  background-color: rgba(139, 69, 19, 0.2);
 }
 .materi img {
   width: 200px;
