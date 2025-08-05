@@ -21,6 +21,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-top: 0;
 }
 .hero-content h1 {
   color: var(--secondary);
@@ -43,14 +44,16 @@ h1 {
 }
 h2 {
   color: var(--secondary);
-  font-size: 2.5rem;
-  margin : 0 auto;
+  font-size: 3rem;
+  margin-top: 50px;
   text-align: center;
+  margin-bottom: 20px;
 }
 p {
   line-height: 1.6;
   text-align: center;
   margin-bottom: 15px;
+  font-size: larger;
 }
 a {
   color: var(--primary);
@@ -59,10 +62,13 @@ a {
 a:hover {
   text-decoration: underline;
 }
-.row {
+.row .contact{
   display: flex;
   gap: 40px;
   align-items: flex-start;
+}
+.contact-info {
+  flex: 1;
 }
 .btn {
   background-color: var(--primary);
@@ -82,6 +88,7 @@ a:hover {
   padding: 60px 5%;
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 100px;
 }
 .navbar {
   display: flex;
@@ -90,6 +97,11 @@ a:hover {
   padding: 10px 20px;
   background-color: var(--primary);
   border-radius: var(--border-radius);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
 }
 .nav-logo {
   font-size: 24px;
@@ -105,19 +117,19 @@ a:hover {
   gap: 20px;
 }
 .navbar-item {
-  color: #2f1b14;
+  color: #fffefe;
   text-decoration: none;
   padding: 10px;
   border-radius: var(--border-radius);
 }
 .navbar-item:hover {
-  background-color: rgba(139, 69, 19, 0.2);
+  background-color: rgba(232, 192, 33, 0.2);
 }
 .about-img, .materi-img {
   flex: 0 0 250px;
 }
 .about-img img, .materi-img img {
-  width: 100%;
+  width: 30%;
   height: auto;
   border-radius: var(--border-radius);
 }
@@ -193,12 +205,36 @@ footer {
 }
 @media (max-width: 1366px) {
   html {
-    font-size: 75%;
+    font-size: 100%;
   }
 }
 @media (max-width: 768px) {
   html {
-    font-size: 62.5%;
+    font-size: 73%;
+  }
+  .navbar {
+    padding: 10px 15px;
+  }   
+  .navbar-menu {
+    gap: 15px;
+  }   
+  .row {
+    flex-direction: column;
+    gap: 20px;
+  }   
+  .about-img, .materi-img {
+    flex: none;
+    text-align: center;
+  }   
+  .hero-content h1 {
+    font-size: 2rem;
+  }     
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }   
+  section {
+    padding: 40px 3%;
+    padding-top: 80px;
   }
 }
 @media (max-width: 450px) {
