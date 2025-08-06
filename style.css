@@ -144,8 +144,10 @@ a:hover {
 }
 .about h3{
   text-align: center;
-  padding-top: 10rem;
-  margin-right: 10rem;
+  padding-top: 5rem;
+  margin-bottom: 20rem;
+  margin-left: 50px;
+  font-size: 2rem;
   color: var(--secondary);
   align-items: center;
   display: flex;
@@ -154,12 +156,22 @@ a:hover {
 .materi h3 {
   text-align: center;
   padding-top: 5rem;
-  mmargin-bottom: 20rem;
+  margin-bottom: 20rem;
   margin-left: 50px;
+  font-size: 2rem;
   color: var(--secondary);
   align-items: center;
   display: flex;
   gap: 20px;
+}
+.contact h3 {
+  color: var(--secondary);
+  font-size: 2rem;
+}
+.contact p{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding-left: 0 auto;
 }
 
 .about-img{
@@ -170,13 +182,20 @@ a:hover {
 } 
 .about p{
   font-size: 1.5rem;
-
+}
+.about{
+  padding-top: 5rem;
+}
+.materi{
+  padding-top: 5rem;
+}
+.contact{
+  padding-top: 5rem;
 }
 .materi p{
   font-size: 1.5rem;
   margin-bottom: 2rem;
   text-align: center;
-  margin-bottom: ;
 }
 .materi-img {
   width: 50%;
