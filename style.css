@@ -38,11 +38,13 @@ body {
   font-size: 1.2rem;
   margin-bottom: 30px;
 }
-.content h2
+
+
 h1 {
   color: var(--primary);
   text-align: center;
 }
+
 h2 {
   color: var(--secondary);
   font-size: 3rem;
@@ -50,19 +52,23 @@ h2 {
   text-align: center;
   margin-bottom: 20px;
 }
+
 p {
   line-height: 1.6;
   text-align: center;
   margin-bottom: 15px;
   font-size: larger;
 }
+
 a {
   color: var(--primary);
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 .row .contact{
   display: flex;
   gap: 40px;
@@ -136,18 +142,52 @@ a:hover {
 
   display: flex;
 }
+.about h3{
+  text-align: center;
+  padding-top: 10rem;
+  margin-right: 10rem;
+  color: var(--secondary);
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+.materi h3 {
+  text-align: center;
+  padding-top: 5rem;
+  mmargin-bottom: 20rem;
+  margin-left: 50px;
+  color: var(--secondary);
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+
 .about-img{
   width: 50%;
+  padding: 10rem;
+  float: left;
+  margin-right: 20px;
 } 
 .about p{
-  padding-right: 50px;
+  font-size: 1.5rem;
+
+}
+.materi p{
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: ;
 }
 .materi-img {
   width: 50%;
+  padding: 10rem;
+  float: left;
+  margin-right: 20px;
+
 }
 .content h3{
   display: block;
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 5px;
