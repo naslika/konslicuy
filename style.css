@@ -202,13 +202,19 @@ a:hover {
   padding: 10rem;
   float: left;
   margin-right: 20px;
-
 }
 .content h3{
   display: block;
   width: 100%;
   margin: 0 auto;
   margin-top: 20px;
+  margin-bottom: 5px;
+}
+.kedua h3{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
   margin-bottom: 5px;
 }
 .about-img img, .materi-img img {
